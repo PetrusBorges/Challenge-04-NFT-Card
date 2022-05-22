@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* VARIABLE COLOR */
+/* PRIMARY */
+:root {
+  --softblue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --cyantrans: hsl(178, 100%, 50%, 60%);
+  /* NEUTRAL */
+  --verydarkblueb: hsl(217, 54%, 11%);
+  --verydarkbluec: hsl(216, 50%, 16%);
+  --verydarkbluel: hsl(215, 32%, 27%);
+  --white: hsl(0 ,0%, 100%);
+}
+
+body {
+  background-color: #0d192b;
+  width: 100%;
+  height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Outfit', sans-serif;
+}
+
+.container {
+  background-color: #14253d;
+  border-radius: 15px;
+  width: 300px;
+  padding: 1.5rem;
+}
+
+.container .img {
+  position: relative;
+}
+
+.container .img div {
+  position: absolute;
+  background-color: rgba(25, 220, 214, 0.6);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.container .img div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.container .img div .view {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .img .mainimg {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.container h3 {
+  margin-top: 1.5rem;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.container h3:hover {
+  color: #00fff7;
+}
+
+.container .description {
+  margin: 0.6rem 0 1rem 0;
+  color: #8bacda;
+  line-height: 28px;
+  font-weight: 300;
+}
+
+.container .price-days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid #8bacda;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+
+.container .price-days .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00fff7;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.container .price-days .price img {
+  margin-right: 5px;
+}
+
+.container .price-days .days {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #00fff7;
+  font-size: 14px;
+}
+
+.container .price-days .days img {
+  margin-right: 5px;
+}
+
+.container .creator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 15px;
+  color: #8bacda;
+}
+
+.container .creator .avatar {
+  border: 1px solid white;
+  border-radius: 50px;
+  margin-right: 1rem;
+  width: 30px;
+}
+
+.container .creator span {
+  color: white;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.container .creator span:hover {
+  color: #00fff7;
+}
+/*# sourceMappingURL=style.css.map */
